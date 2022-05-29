@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64A1D3ED2842F41000D425FE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A1D3EC2842F41000D425FE /* LoginViewController.swift */; };
+		64A1D3EF2842F44000D425FE /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A1D3EE2842F44000D425FE /* RegistrationViewController.swift */; };
+		64A1D3F12842F46600D425FE /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A1D3F02842F46600D425FE /* PostViewController.swift */; };
+		64A1D3F32842F49800D425FE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A1D3F22842F49800D425FE /* EditProfileViewController.swift */; };
+		64A1D3F52842F4B300D425FE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A1D3F42842F4B300D425FE /* SettingsViewController.swift */; };
+		64A1D3F72842F4D500D425FE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A1D3F62842F4D500D425FE /* ListViewController.swift */; };
+		64A1D3F92842F4F400D425FE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A1D3F82842F4F400D425FE /* SearchViewController.swift */; };
+		64A1D3FB2842F50C00D425FE /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A1D3FA2842F50C00D425FE /* SearchResultsViewController.swift */; };
+		64A1D3FD2842F60900D425FE /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A1D3FC2842F60900D425FE /* PostEditorViewController.swift */; };
+		64A1D3FF2842F84700D425FE /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A1D3FE2842F84700D425FE /* PublishPostViewController.swift */; };
 		64EE3D7128428D150068DDC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE3D7028428D150068DDC2 /* AppDelegate.swift */; };
 		64EE3D7328428D150068DDC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE3D7228428D150068DDC2 /* SceneDelegate.swift */; };
 		64EE3D7528428D150068DDC2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE3D7428428D150068DDC2 /* HomeViewController.swift */; };
@@ -20,6 +30,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64A1D3EC2842F41000D425FE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		64A1D3EE2842F44000D425FE /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		64A1D3F02842F46600D425FE /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		64A1D3F22842F49800D425FE /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		64A1D3F42842F4B300D425FE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		64A1D3F62842F4D500D425FE /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		64A1D3F82842F4F400D425FE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		64A1D3FA2842F50C00D425FE /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		64A1D3FC2842F60900D425FE /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
+		64A1D3FE2842F84700D425FE /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
 		64EE3D6D28428D150068DDC2 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64EE3D7028428D150068DDC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64EE3D7228428D150068DDC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +65,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64A1D3E92842F39A00D425FE /* Core Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				64EE3D8D2842DE1A0068DDC2 /* CameraViewController.swift */,
+				64EE3D8B2842DB590068DDC2 /* ExploreViewController.swift */,
+				64EE3D7428428D150068DDC2 /* HomeViewController.swift */,
+				64EE3D8F2842DE4A0068DDC2 /* NotificationsViewController.swift */,
+				64EE3D912842DE650068DDC2 /* ProfileViewController.swift */,
+			);
+			path = "Core Tabs";
+			sourceTree = "<group>";
+		};
+		64A1D3EA2842F3E300D425FE /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				64A1D3EB2842F3F700D425FE /* Onboarding */,
+				64A1D3F02842F46600D425FE /* PostViewController.swift */,
+				64A1D3F22842F49800D425FE /* EditProfileViewController.swift */,
+				64A1D3F62842F4D500D425FE /* ListViewController.swift */,
+				64A1D3FC2842F60900D425FE /* PostEditorViewController.swift */,
+				64A1D3FE2842F84700D425FE /* PublishPostViewController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		64A1D3EB2842F3F700D425FE /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				64A1D3EC2842F41000D425FE /* LoginViewController.swift */,
+				64A1D3EE2842F44000D425FE /* RegistrationViewController.swift */,
+				64A1D3F42842F4B300D425FE /* SettingsViewController.swift */,
+				64A1D3F82842F4F400D425FE /* SearchViewController.swift */,
+				64A1D3FA2842F50C00D425FE /* SearchResultsViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		64EE3D6428428D150068DDC2 = {
 			isa = PBXGroup;
 			children = (
@@ -64,11 +121,11 @@
 		64EE3D6F28428D150068DDC2 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
-				64EE3D87284290BF0068DDC2 /* Resources */,
-				64EE3D86284290980068DDC2 /* Models */,
-				64EE3D852842908E0068DDC2 /* Views */,
 				64EE3D84284290540068DDC2 /* Controllers */,
 				64EE3D7E28428D180068DDC2 /* Info.plist */,
+				64EE3D86284290980068DDC2 /* Models */,
+				64EE3D87284290BF0068DDC2 /* Resources */,
+				64EE3D852842908E0068DDC2 /* Views */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -76,11 +133,8 @@
 		64EE3D84284290540068DDC2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				64EE3D7428428D150068DDC2 /* HomeViewController.swift */,
-				64EE3D8B2842DB590068DDC2 /* ExploreViewController.swift */,
-				64EE3D8D2842DE1A0068DDC2 /* CameraViewController.swift */,
-				64EE3D8F2842DE4A0068DDC2 /* NotificationsViewController.swift */,
-				64EE3D912842DE650068DDC2 /* ProfileViewController.swift */,
+				64A1D3EA2842F3E300D425FE /* Other */,
+				64A1D3E92842F39A00D425FE /* Core Tabs */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -190,13 +244,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64A1D3F32842F49800D425FE /* EditProfileViewController.swift in Sources */,
 				64EE3D8C2842DB590068DDC2 /* ExploreViewController.swift in Sources */,
+				64A1D3FF2842F84700D425FE /* PublishPostViewController.swift in Sources */,
 				64EE3D8E2842DE1A0068DDC2 /* CameraViewController.swift in Sources */,
 				64EE3D7528428D150068DDC2 /* HomeViewController.swift in Sources */,
+				64A1D3FB2842F50C00D425FE /* SearchResultsViewController.swift in Sources */,
+				64A1D3FD2842F60900D425FE /* PostEditorViewController.swift in Sources */,
+				64A1D3EF2842F44000D425FE /* RegistrationViewController.swift in Sources */,
+				64A1D3F12842F46600D425FE /* PostViewController.swift in Sources */,
 				64EE3D902842DE4A0068DDC2 /* NotificationsViewController.swift in Sources */,
+				64A1D3ED2842F41000D425FE /* LoginViewController.swift in Sources */,
+				64A1D3F92842F4F400D425FE /* SearchViewController.swift in Sources */,
 				64EE3D922842DE650068DDC2 /* ProfileViewController.swift in Sources */,
 				64EE3D7128428D150068DDC2 /* AppDelegate.swift in Sources */,
 				64EE3D7328428D150068DDC2 /* SceneDelegate.swift in Sources */,
+				64A1D3F72842F4D500D425FE /* ListViewController.swift in Sources */,
+				64A1D3F52842F4B300D425FE /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
