@@ -19,6 +19,7 @@
 		64A1D3FD2842F60900D425FE /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A1D3FC2842F60900D425FE /* PostEditorViewController.swift */; };
 		64A1D3FF2842F84700D425FE /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A1D3FE2842F84700D425FE /* PublishPostViewController.swift */; };
 		64AEC2822843DD3E00BC2EAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64AEC2812843DD3E00BC2EAC /* GoogleService-Info.plist */; };
+		64AEC28528472F3100BC2EAC /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AEC28428472F3100BC2EAC /* DatabaseManager.swift */; };
 		64EE3D7128428D150068DDC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE3D7028428D150068DDC2 /* AppDelegate.swift */; };
 		64EE3D7328428D150068DDC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE3D7228428D150068DDC2 /* SceneDelegate.swift */; };
 		64EE3D7528428D150068DDC2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE3D7428428D150068DDC2 /* HomeViewController.swift */; };
@@ -44,6 +45,7 @@
 		64A1D3FC2842F60900D425FE /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		64A1D3FE2842F84700D425FE /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
 		64AEC2812843DD3E00BC2EAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		64AEC28428472F3100BC2EAC /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		64EE3D6D28428D150068DDC2 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64EE3D7028428D150068DDC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64EE3D7228428D150068DDC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,9 +100,6 @@
 			children = (
 				64A1D3EC2842F41000D425FE /* LoginViewController.swift */,
 				64A1D3EE2842F44000D425FE /* RegistrationViewController.swift */,
-				64A1D3F42842F4B300D425FE /* SettingsViewController.swift */,
-				64A1D3F82842F4F400D425FE /* SearchViewController.swift */,
-				64A1D3FA2842F50C00D425FE /* SearchResultsViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -112,6 +111,9 @@
 				64A1D3F22842F49800D425FE /* EditProfileViewController.swift */,
 				64A1D3F62842F4D500D425FE /* ListViewController.swift */,
 				64A1D3FC2842F60900D425FE /* PostEditorViewController.swift */,
+				64A1D3F42842F4B300D425FE /* SettingsViewController.swift */,
+				64A1D3F82842F4F400D425FE /* SearchViewController.swift */,
+				64A1D3FA2842F50C00D425FE /* SearchResultsViewController.swift */,
 				64A1D3FE2842F84700D425FE /* PublishPostViewController.swift */,
 			);
 			path = General;
@@ -178,6 +180,7 @@
 				64AEC2812843DD3E00BC2EAC /* GoogleService-Info.plist */,
 				64EE3D7028428D150068DDC2 /* AppDelegate.swift */,
 				64EE3D7228428D150068DDC2 /* SceneDelegate.swift */,
+				64AEC28428472F3100BC2EAC /* DatabaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				64A1D3FB2842F50C00D425FE /* SearchResultsViewController.swift in Sources */,
 				64A1D3FD2842F60900D425FE /* PostEditorViewController.swift in Sources */,
 				64A1D3EF2842F44000D425FE /* RegistrationViewController.swift in Sources */,
+				64AEC28528472F3100BC2EAC /* DatabaseManager.swift in Sources */,
 				64A1D3F12842F46600D425FE /* PostViewController.swift in Sources */,
 				64EE3D902842DE4A0068DDC2 /* NotificationsViewController.swift in Sources */,
 				64A1D3ED2842F41000D425FE /* LoginViewController.swift in Sources */,
