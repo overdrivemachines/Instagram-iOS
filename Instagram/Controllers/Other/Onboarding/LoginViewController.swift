@@ -67,7 +67,8 @@ class LoginViewController: UIViewController {
     private let headerView: UIView = {
         let header = UIView()
         header.clipsToBounds = true
-        header.backgroundColor = .red
+        let backgroundImageView = UIImageView(image: UIImage(named: "gradient"))
+        header.addSubview(backgroundImageView)
         return header
     }()
 
@@ -81,7 +82,21 @@ class LoginViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         // assign frames
-        headerView.frame = CGRect(x: 0, y: view.safeAreaInsets.top, width: view.width, height: view.height/3.0)
+        headerView.frame = CGRect(x: 0, y: 0.0, width: view.width, height: view.height/3.0)
+        configureHeaderView()
+    }
+    
+    private func configureHeaderView() {
+        guard headerView.subviews.count == 1 else {
+            return
+        }
+        
+        guard let backgroundView = headerView.subviews.first else {
+            return
+        }
+        backgroundView.frame = headerView.bounds
+        
+        // Add Instagram Logo
     }
     
     private func addSubviews() {
