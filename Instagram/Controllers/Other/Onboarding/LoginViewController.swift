@@ -57,10 +57,16 @@ class LoginViewController: UIViewController {
         return button
     }()
     private let termsButton: UIButton = {
-        return UIButton()
+        let button = UIButton()
+        button.setTitle("Terms of Service", for: .normal)
+        button.setTitleColor(.secondaryLabel, for: .normal)
+        return button
     }()
     private let privacyButton: UIButton = {
-        return UIButton()
+        let button = UIButton()
+        button.setTitle("Privacy Policy", for: .normal)
+        button.setTitleColor(.secondaryLabel, for: .normal)
+        return button
     }()
     private let createAccountButton: UIButton = {
         let button = UIButton()
@@ -79,6 +85,13 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Inside LoginVC - viewDidLoad()")
+        
+        // Adding Targets
+        loginButton.addTarget(self, action: #selector(didTapLoginButton), for: .touchUpInside)
+        createAccountButton.addTarget(self, action: #selector(didTapCreateAccountButton), for: .touchUpInside)
+        termsButton.addTarget(self, action: #selector(didTapTermsButton), for: .touchUpInside)
+        privacyButton.addTarget(self, action: #selector(didTapPrivacyButton), for: .touchUpInside)
+        
         // Assign Deligates
         usernameEmailField.delegate = self
         passwordField.delegate = self
@@ -112,7 +125,7 @@ class LoginViewController: UIViewController {
         imageView.frame = CGRect(x: headerView.width/4.0, y: view.safeAreaInsets.top, width: headerView.width/2.0, height: headerView.height - view.safeAreaInsets.top)
         
         // Username Position
-        usernameEmailField.frame = CGRect(x: 25, y: headerView.bottom + 10, width: headerView.width - 50, height: 52)
+        usernameEmailField.frame = CGRect(x: 25, y: headerView.bottom + 40, width: headerView.width - 50, height: 52)
         
         // Password Position
         passwordField.frame = CGRect(x: 25, y: usernameEmailField.bottom + 10, width: headerView.width - 50, height: 52)
@@ -123,6 +136,12 @@ class LoginViewController: UIViewController {
         // Create Account Button Position
         createAccountButton.frame = CGRect(x: 25, y: loginButton.bottom + 10, width: headerView.width - 50, height: 52)
         
+        // Terms Button Position
+        termsButton.frame = CGRect(x: 10, y: view.height - view.safeAreaInsets.bottom - 100, width: view.width - 20, height: 50)
+        
+        // Privacy Button Position
+        privacyButton.frame = CGRect(x: 10, y: view.height - view.safeAreaInsets.bottom - 50, width: view.width - 20, height: 50)
+        
     }
     
     private func addSubviews() {
@@ -132,7 +151,6 @@ class LoginViewController: UIViewController {
         view.addSubview(loginButton)
         view.addSubview(createAccountButton)
         view.addSubview(termsButton)
-        view.addSubview(privacyButton)
         view.addSubview(privacyButton)
         view.addSubview(headerView)
     }
