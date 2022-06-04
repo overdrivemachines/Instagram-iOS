@@ -74,7 +74,7 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Inside LoginVC")
+        print("Inside LoginVC - viewDidLoad()")
         addSubviews()
         view.backgroundColor = .systemBackground
     }
@@ -87,6 +87,7 @@ class LoginViewController: UIViewController {
     }
     
     private func configureHeaderView() {
+        print("configureHeaderView() - custom")
         guard headerView.subviews.count == 1 else {
             return
         }
@@ -97,9 +98,15 @@ class LoginViewController: UIViewController {
         backgroundView.frame = headerView.bounds
         
         // Add Instagram Logo
+        let imageView = UIImageView(image: UIImage(named: "text"))
+        headerView.addSubview(imageView)
+        imageView.contentMode = .scaleAspectFit
+        imageView.frame = CGRect(x: headerView.width/4.0, y: view.safeAreaInsets.top, width: headerView.width/2.0, height: headerView.height - view.safeAreaInsets.top)
+        
     }
     
     private func addSubviews() {
+        print("addSubviews() - custom")
         view.addSubview(usernameEmailField)
         view.addSubview(passwordField)
         view.addSubview(loginButton)
